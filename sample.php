@@ -1,3 +1,7 @@
+<?php
+    $result="無し";
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -6,7 +10,7 @@
     </head>
     <body>
         <h1>おみくじ</h1>
-        <p>おみくじ結果：無し</p>
+        <p>おみくじ結果：<?php print htmlspecialchars($result, ENT_QUOTES, "UTF-8");?></p>
         <form action="sumple.php" method="POST">
             <botton type="submit" name="act" value="drow">おみくじを引く！</botton>
         </form>
